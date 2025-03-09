@@ -8,10 +8,7 @@ El resultado queda en el portapapeles.
 FORMA DE INSTALACION
 
 1. Genera una carpeta en C:\ y llamala Scripts
-2. Guardar ambos archivos en dicha ruta
-3. Presionar Win+R, escribir regedit e ingresar al registro del sistema
-4. Dirigirse a HKEY_CLASSES_ROOT\Directory\shell
-5. Crea una clave llamada "Copiar nombres de archivos", y dentro una subclave "command"
-6. Editar el valor predeterminado de command y establecer el siguiete: wscript.exe "C:\Scripts\RunHidden.vbs" "%V"
-7. Si quieren agregar un icono a la funcion, dentro de clave "Copiar nombres de archivos" crear una Key llamada Icon
-8. Dentro de Icon poner el siguiente valor: shell32.dll,4
+2. Dentro de Scripts, generar otra carpeta y nombrarla CopyListName. Debe quedar la sigueinte ruta: C:\Scripts\CopyListName
+3. Guardar los archivos dentro de dicha ruta
+4. Ejecutar AddCopyFileNames.reg para agregar la funcion al Registro del sistema
+5. Para eliminar la funcion ejecutar RemoveCopyFileNames.reg
